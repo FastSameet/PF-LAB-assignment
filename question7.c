@@ -1,9 +1,10 @@
 #include<stdio.h>
+#include<string.h>
 int main(){
-    int pass;
+    char pass[20];
     printf("enter your password:");
-    scanf("%d",&pass);
-    if(pass==1234){
+    scanf("%s",&pass);
+    if(strcmp(pass,"1234")==0){
     	printf("Access Granted");}
 	else{
 		printf("Access Denied");
